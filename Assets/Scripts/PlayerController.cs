@@ -194,14 +194,6 @@ public class PlayerController : MonoBehaviour
         isInvulnerable = false;
     }
 
-    // ---- Used by the GameManager for checkpoints ----
-    public void TeleportTo(Vector3 position)
-    {
-        rb.linearVelocity = Vector2.zero;
-        rb.position = position;
-        transform.position = position;
-    }
-
     void PlaySound(AudioClip clip)
     {
         if (audioSource != null && clip != null) audioSource.PlayOneShot(clip);
