@@ -165,6 +165,7 @@ public class PlayerController : MonoBehaviour
     public void Knockback(Vector2 fromPosition)
     {
         if (isInvulnerable) return;
+        if (GameManager.Instance != null) GameManager.Instance.TakeDamage();
         float dir = transform.position.x >= fromPosition.x ? 1f : -1f; // push away from the mob
         rb.linearVelocity = new Vector2(dir * knockbackForce.x, knockbackForce.y);
         if (impulse != null) impulse.GenerateImpulse();
