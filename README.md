@@ -7,3 +7,5 @@ Move	A / D or Left / Right
 Jump (hold for higher)	Space, W, or Up
 Restart run	R
 Pause	Esc
+
+**Download and play:** [Latest release](https://github.com/JordanKiryakoza/AztecAscent/releases/latest)
